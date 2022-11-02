@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/todo_textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todoリスト"
+        android:textAlignment="center"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/todo_textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="達成度：　0　% "
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+
+        <EditText
+            android:id="@+id/todo_text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:hint="ここに直接入力"
+            android:inputType="text"
+            android:maxLength="15" />
+    </LinearLayout>
+
+</LinearLayout>
