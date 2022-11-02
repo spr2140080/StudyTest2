@@ -3,31 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_todo">
 
     <fragment
         android:id="@+id/navigation_trivia"
-        android:name="com.example.studytest2.ui.trivia.navigation_trivia"
-        android:label="navigation_trivia_fragment"
-        tools:layout="@layout/navigation_trivia_fragment" />
+        android:name="com.example.studytest2.ui.trivia.TriviaFragment"
+        android:label="勉強の豆知識"
+        tools:layout="@layout/fragment_trivia" />
     <fragment
         android:id="@+id/navigation_target"
-        android:name="com.example.studytest2.ui.target.navigation_target"
-        android:label="navigation_target_fragment"
-        tools:layout="@layout/navigation_target_fragment" />
+        android:name="com.example.studytest2.ui.target.TargetFragment"
+        android:label="目標"
+        tools:layout="@layout/fragment_target" />
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.studytest2.ui.home.HomeFragment"
-        android:label="navigation_home_fragment"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_todo"
+        android:name="com.example.studytest2.ui.todolist.ToDoListFragment"
+        android:label="ToDOリスト"
+        tools:layout="@layout/fragment_todolist" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.studytest2.ui.dashboard.DashboardFragment"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_dairy"
+        android:name="com.example.studytest2.ui.diary.DiaryFragment"
+        android:label="日記"
+        tools:layout="@layout/fragment_diary" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.studytest2.ui.notifications.NotificationsFragment"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_graph"
+        android:name="com.example.studytest2.ui.graph.GraphFragment"
+        android:label="グラフ"
+        tools:layout="@layout/fragment_graph" />
 </navigation>

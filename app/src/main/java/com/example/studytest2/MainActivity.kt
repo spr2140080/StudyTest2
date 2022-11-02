@@ -2,8 +2,6 @@ package com.example.studytest2
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -29,7 +27,8 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_todo, R.id.navigation_dairy, R.id.navigation_graph,
+                R.id.navigation_target,R.id.navigation_trivia
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

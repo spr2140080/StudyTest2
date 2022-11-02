@@ -1,4 +1,4 @@
-package com.example.studytest2.ui.target
+package com.example.studytest2.ui.trivia
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.studytest2.R
-import com.example.teststudy1.ui.target.NavigationTargetViewModel
+import com.example.teststudy1.ui.trivia.TriviaViewModel
 
 
-class navigation_target : Fragment() {
+class TriviaFragment : Fragment() {
 
     companion object {
-        fun newInstance() = navigation_target()
+        fun newInstance() = TriviaFragment()
     }
 
-    private lateinit var viewModel: NavigationTargetViewModel
+    private lateinit var viewModel: TriviaViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.navigation_target_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_trivia, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(NavigationTargetViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(TriviaViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
