@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyTest2">
+        <activity android:name=".EnGraphActivity"></activity>
+        <activity android:name=".BouGraphActivity" />
+        <activity android:name=".SubjectActivity" />
         <activity
-            android:name=".timeActivity"
+            android:name=".TimeActivity"
             android:label="@string/title_activity_time"
-            android:theme="@style/Theme.StudyTest2.NoActionBar"></activity>
+            android:theme="@style/Theme.StudyTest2.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">

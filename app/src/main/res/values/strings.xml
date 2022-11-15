@@ -12,10 +12,19 @@
     <string name="title_activity_study_test2">MainActivity</string>
     <string name="title_activity_time">timeActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="startButton">スタートボタン</string>
+
+    <!--タイマー画面-->
+    <string name="startButton">スタート</string>
+    <string name="stopButton">ストップ</string>
     <string name="subjectButton">科目選択</string>
+
+    <!--科目選択画面-->
+    <string name="subject1">国語</string>
+    <string name="subject2">数学</string>
+    <string name="subject3">英語</string>
+    <string name="subject4">＋</string>
+    <string name="subject_text">科目設定をしてください。</string>
 </resources>
+

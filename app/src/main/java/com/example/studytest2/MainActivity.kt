@@ -2,6 +2,10 @@ package com.example.studytest2
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.CountDownTimer
+import android.widget.Button
+import android.widget.ImageButton
+import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -9,8 +13,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.studytest2.databinding.ActivityMainBinding
+import com.example.studytest2.ui.graph.GraphFragment
 
 class MainActivity : AppCompatActivity() {
+
 
     private lateinit var binding: ActivityMainBinding
 
@@ -19,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         val navView: BottomNavigationView = binding.navView
 
@@ -35,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         binding.timebutton.setOnClickListener {
-            val intent = Intent(this, timeActivity::class.java)
+            val intent = Intent(this, TimeActivity::class.java)
             startActivity(intent)
         }
     }
