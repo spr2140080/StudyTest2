@@ -15,6 +15,8 @@ class BouGraphActivity : AppCompatActivity() {
         binding = ActivityBouBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding
+
 
         }
     }
