@@ -11,7 +11,7 @@ class SubjectActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subject)
+//        setContentView(R.layout.activity_subject)
 
         binding = ActivitySubjectBinding.inflate(layoutInflater)
         setContentView(binding.root)
