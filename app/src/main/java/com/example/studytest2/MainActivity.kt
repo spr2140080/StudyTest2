@@ -45,5 +45,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TimeActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
