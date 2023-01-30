@@ -1,5 +1,7 @@
 package com.example.studytest2
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -8,8 +10,13 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import com.example.studytest2.databinding.ActivityTimeBinding
 import kotlinx.coroutines.NonCancellable.start
+import java.io.FileOutputStream
+import java.lang.Long.getLong
+import java.text.SimpleDateFormat
+import java.util.*
 import java.util.zip.CheckedOutputStream
 import kotlin.system.measureTimeMillis
+import kotlin.text.Typography.times
 
 class TimeActivity : AppCompatActivity() {
 
@@ -42,7 +49,7 @@ class TimeActivity : AppCompatActivity() {
         override fun onTick(millisUntilFinished: Long) {
             val minute = millisUntilFinished / 1000L / 60L
             val second = millisUntilFinished / 1000L % 60L
-//            var remainingTime:Long = 0
+            var remainingTime:Long = 0
             binding.timerText.text = "%2d:%2$02d".format(minute, second)
 //            remainingTime =  "%2d:%2$02d".toLong(minute, second)
 
@@ -68,12 +75,13 @@ class TimeActivity : AppCompatActivity() {
         binding = ActivityTimeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.timerText.text = "15:00"
 
-        var timer = MyCountDownTimer(15 * 60 * 1000, 100)
+
+        var timer = MyCountDownTimer(20 * 60 * 1000, 100)
 
         timer.isRunning = when (timer.isRunning) {
             false -> {
+                val fileName = "contents.txt"
                 binding.startButton.setOnClickListener {
                     if (binding.subjectText.text.length == 0) {
                         AlertDialog.Builder(this@TimeActivity)
@@ -86,17 +94,26 @@ class TimeActivity : AppCompatActivity() {
                         timer.start()
                     }
                 }
+
                 binding.stopButton.setOnClickListener {
-
                     timer.cancel()
-
+                    val times1 = binding.timerText.text.split(":")
+                    val sharedPreferences = getSharedPreferences("time_file", Context.MODE_PRIVATE)
+                    sharedPreferences.edit().putLong("hidari", times1[0].toLong()).apply()
+                    sharedPreferences.edit().putLong("migi", times1[1].toLong()).apply()
+                    val min = sharedPreferences.getLong("hidari",0)
+                    val sec = sharedPreferences.getLong("migi",0)
+                    timer = MyCountDownTimer((min * 60 + sec) * 1000,100)
 
                 }
-                binding.RestartButton.setOnClickListener {
+//                binding.RestartButton.setOnClickListener {
+//                    val sharedPreferences = getSharedPreferences("timekei",Context.MODE_PRIVATE)
+//                    val min = getSharedPreferences("hidari", )
+//                    val sec = getSharedPreferences("migi", 0)
+//                    val times2  = binding.timerText.text.split(":")
+//                    timer = MyCountDownTimer((min * 60 + sec) * 1000,100)
+//                }
 
-
-
-                }
                 true
             }
             true -> {
@@ -124,6 +141,7 @@ class TimeActivity : AppCompatActivity() {
                         val sec = times[1].toLong()
                         timer = MyCountDownTimer((min * 60 + sec) * 1000, 100)
                     }
+
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {}
