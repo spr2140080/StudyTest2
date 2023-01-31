@@ -64,6 +64,8 @@ class TimeActivity : AppCompatActivity() {
                     .setMessage("お疲れさまでした")
                     .setPositiveButton("OK") {dialog, which ->}
                     .show()
+                binding.startButton.isEnabled = true
+                binding.stopButton.isEnabled  = false
             }else{
 
             }
@@ -91,19 +93,23 @@ class TimeActivity : AppCompatActivity() {
                             .show()
                     }
                     else {
+                        binding.startButton.isEnabled = false
+                        binding.stopButton.isEnabled = true
                         timer.start()
                     }
                 }
 
                 binding.stopButton.setOnClickListener {
                     timer.cancel()
+                    binding.stopButton.isEnabled = false
+                    binding.startButton.isEnabled = true
                     val times1 = binding.timerText.text.split(":")
                     val sharedPreferences = getSharedPreferences("time_file", Context.MODE_PRIVATE)
                     sharedPreferences.edit().putLong("hidari", times1[0].toLong()).apply()
                     sharedPreferences.edit().putLong("migi", times1[1].toLong()).apply()
-                    val min = sharedPreferences.getLong("hidari",0)
-                    val sec = sharedPreferences.getLong("migi",0)
-                    timer = MyCountDownTimer((min * 60 + sec) * 1000,100)
+                    val min1 = sharedPreferences.getLong("hidari",0)
+                    val sec1 = sharedPreferences.getLong("migi",0)
+                    timer = MyCountDownTimer((min1 * 60 + sec1) * 1000,100)
 
                 }
 //                binding.RestartButton.setOnClickListener {
@@ -137,9 +143,9 @@ class TimeActivity : AppCompatActivity() {
                     item?.let {
                         if (it.isNotEmpty()) binding.timerText.text = it
                         val times = it.split(":")
-                        val min = times[0].toLong()
-                        val sec = times[1].toLong()
-                        timer = MyCountDownTimer((min * 60 + sec) * 1000, 100)
+                        val min2 = times[0].toLong()
+                        val sec2 = times[1].toLong()
+                        timer = MyCountDownTimer((min2 * 60 + sec2) * 1000, 100)
                     }
 
                 }

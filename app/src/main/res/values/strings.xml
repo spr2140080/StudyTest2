@@ -20,12 +20,9 @@
     <string name="stopButton">ストップ</string>
     <string name="subjectButton">科目選択</string>
 
-    <!--科目選択画面-->
-    <string name="subject1">国語</string>
-    <string name="subject2">数学</string>
-    <string name="subject3">英語</string>
-    <string name="subject4">＋</string>
+    <!--科目設定画面-->
     <string name="subject_text">科目設定をしてください。</string>
+    <string name="Subject_Text1">科目は５つまで登録が出来ます。</string>
     <!--勉強豆知識画面-->
     <string name="rest_1">正しい休憩の取り方\n</string>
     <string name="rest_2">勉強終わってただしく休憩取れているでしょうか？\n
