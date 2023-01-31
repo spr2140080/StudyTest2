@@ -11,18 +11,20 @@ class SubjectActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subject)
+//        setContentView(R.layout.activity_subject)
 
         binding = ActivitySubjectBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.BackButton.setOnClickListener {
+        binding.SjButton.setOnClickListener {
             val intent = Intent(this, TimeActivity::class.java)
+            intent.putExtra("SUBJECT",binding.subject.text.toString())
             startActivity(intent)
         }
-        binding.addButton.setOnClickListener {
-            val intent = Intent(this,TimeActivity::class.java)
-            intent.putExtra("SUBJECT", binding.SjText.text.toString())
+        
+
+        binding.BackButton.setOnClickListener {
+            val intent = Intent(this, TimeActivity::class.java)
             startActivity(intent)
         }
     }
