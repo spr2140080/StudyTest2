@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="time_arr">
-        <item>00:05</item>
+        <item>15:00</item>
         <item>30:00</item>
         <item>45:00</item>
         <item>60:00</item>

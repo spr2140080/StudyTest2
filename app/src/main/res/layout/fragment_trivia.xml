@@ -8,45 +8,16 @@
     tools:context=".ui.trivia.TriviaFragment">
 
     <TextView
-        android:id="@+id/trivia_text"
-        android:layout_width="380dp"
-        android:layout_height="74dp"
-        android:layout_marginEnd="16dp"
-        android:text="勉強の豆知識一覧"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="34sp"
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/title_trivia"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/con_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="集中力を高める方法3選"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trivia_text" />
-
-    <Button
-        android:id="@+id/rest_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="正しい休憩の取り方３選"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/con_button" />
-
-    <Button
-        android:id="@+id/efficiency_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="効率良く勉強の進め方３選"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rest_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

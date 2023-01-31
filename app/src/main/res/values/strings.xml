@@ -20,53 +20,22 @@
     <string name="stopButton">ストップ</string>
     <string name="subjectButton">科目選択</string>
 
-    <!--科目設定画面-->
+    <!--科目選択画面-->
+    <string name="subject1">国語</string>
+    <string name="subject2">数学</string>
+    <string name="subject3">英語</string>
+    <string name="subject4">＋</string>
     <string name="subject_text">科目設定をしてください。</string>
-    <string name="Subject_Text1">科目は５つまで登録が出来ます。</string>
-    <!--勉強豆知識画面-->
-    <string name="rest_1">正しい休憩の取り方\n</string>
-    <string name="rest_2">勉強終わってただしく休憩取れているでしょうか？\n
-    正しく休憩を取ることで次の作業や勉強に集中しやすくなります。\n
-    今回は正しい休憩の取り方を３つご紹介致します。\n</string>
-    <string name="rest_3">・軽い運動\n</string>
-    <string name="rest_4">勉強している間、ずっと座っていると血流は悪くなり頭の回転が悪くなってしまいます！\n
-    それを解決してくれるのが「軽い運動」です。ウォーキングやジョギング、ストレッチをやることで血流がよくなり頭の回転が良くなります\n
-    また、軽い運動をして休憩を取ると活力が高くなり、認知機能も高まることもわかっています。さらに疲労感も軽減するみたいです。
-    休憩時には皆さん軽い運動から取り入れてみてはいかがでしょうか！\n</string>
-    <string name="rest_5">・仮眠を取る\n</string>
-    <string name="rest_6">ついつい休憩のときにスマホなど触ってはないでしょうか？\n休憩時にスマホを触ってしまうとさらに脳を疲れさせているだけです。\n
-    脳をしっかり休ませるには仮眠が一番良いでしょう。15分の仮眠を取るだけで、疲労回復効果や認知能力も上がります。
-    \nまた、だらだら長い時間勉強するより、仮眠をとった休憩をとることで集中して勉強がで出来ると思います。
-    \nぜひ、取り入れてみてください。\n</string>
-    <string name="rest_7">・テンポの早い音楽を聴く\n</string>
-    <string name="rest_8">勉強中に音楽を聴いて勉強している人は多いのではないかと思います。\nしかし、それは勉強の妨げになっています。音楽を聴くタイミングは勉強前と休憩時です。\n
-    勉強をやりはじめる前にテンポの早い音楽を聴くことで快楽物質の「ドーパミン」が分泌され気分が上がり、勉強が始めやすくなります。\n
-    また、テンポの速い音楽を聞くことで短期記憶などに使われる部位が活性化させ、短期記憶が向上したという結果が出ております\n
-    上手く音楽を使うことで勉強の効率化も計ることができるので、ぜひやってみてください！\n</string>
-    <string name="rest_9">・まとめ\n</string>
-    <string name="rest_10">今回は正しい休憩の取り方３選を紹介しました。\n
-    どれも取り入れやすい物を紹介してきました。正しく休憩をとり、目標に向かって頑張って勉強に取り組んでみてください！</string>
-
-    <string name="con_text1">集中力を高める方法３選</string>
-    <string name="con_text2">長い時間勉強や作業を行っていくと少しずつ集中量が落ちていきます。
-    今回はその集中力をできるだけ長く保つ方法を紹介していきます！</string>
-    <string name="con_text3">・作業台に観葉植物を置く</string>
-    <string name="con_text4"></string>
-    <string name="con_text5">・空気の入れ替えをする。</string>
-    <string name="con_text6"></string>
-    <string name="con_text7">・ブドウ糖を取る</string>
-    <string name="con_text8"></string>
-    <string name="con_text9">・まとめ</string>
-    <string name="con_text10"></string>
-    <string name="eff_text1">勉強効率を上げる方法３選</string>
-    <string name="eff_text2"></string>
-    <string name="eff_text3">・シングルタスク</string>
-    <string name="eff_text4"></string>
-    <string name="eff_text5">・要点をまとめる</string>
-    <string name="eff_text6"></string>
-    <string name="eff_text7">・アウトプットとインプットの比率を考えよう</string>
-    <string name="eff_text8"></string>
-    <string name="eff_text9">・まとめ</string>
-    <string name="eff_text10"></string>
-    <string name="preference_file_key">DataStore</string>
+    <string name="mokuhyou">今月の目標を設定する</string>
+    <string name="text50">今月の目標</string>
+    <string name="Edittext50" />
+    <string name="button50">決定</string>
+    <string name="target">今月の目標を入力する</string>
+    <string name="button70">書き直す</string>
+    <string name="button71">確定</string>
+    <string name="text70">今月の目標</string>
+    <string name="text71" />
+    <string name="text72">でよろしいですか？</string>
+    <string name="text73">※確定してしまうと期限が過ぎるまで目標を変更することができません。</string>
 </resources>
+

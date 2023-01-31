@@ -1,4 +1,4 @@
-package com.example.studytest2.ui.trivia
+package com.example.teststudy1.ui.trivia
 
 import androidx.lifecycle.ViewModel
 
