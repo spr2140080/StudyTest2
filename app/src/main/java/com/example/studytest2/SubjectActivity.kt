@@ -20,5 +20,10 @@ class SubjectActivity : AppCompatActivity() {
             val intent = Intent(this, TimeActivity::class.java)
             startActivity(intent)
         }
+        binding.addButton.setOnClickListener {
+            val intent = Intent(this,TimeActivity::class.java)
+            intent.putExtra("SUBJECT", binding.SjText.text.toString())
+            startActivity(intent)
+        }
     }
 }
