@@ -9,12 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyTest2">
-        <activity android:name=".MokuhyoukakuninActivity"></activity>
-        <activity android:name=".MokuhyounyuryokuActivity" />
-        <activity android:name=".MokuhyouActivity" />
-        <activity android:name=".EnGraphActivity" />
-        <activity android:name=".BouGraphActivity" />
-        <activity android:name=".SubjectActivity" />
+        <activity android:name=".SubjectActivity3"></activity>
+        <activity android:name=".ConcentrationActivity" />
+        <activity android:name=".EfficiencyActivity" />
+        <activity android:name=".RestActivity" />
+        <activity android:name=".SubjectActivity2" />
         <activity
             android:name=".TimeActivity"
             android:label="@string/title_activity_time"

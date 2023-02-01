@@ -3,22 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_todo"
-        android:icon="@drawable/todolist"
+        android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_ToDO" />
     <item
         android:id="@+id/navigation_dairy"
-        android:icon="@drawable/driary"
+        android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_diary" />
     <item
         android:id="@+id/navigation_graph"
-        android:icon="@drawable/graph"
+        android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_graph" />
     <item
         android:id="@+id/navigation_target"
-        android:icon="@drawable/target"
+        android:icon="@drawable/ic_target_black_24dp"
         android:title="@string/title_target" />
     <item
         android:id="@+id/navigation_trivia"
-        android:icon="@drawable/trivia"
+        android:icon="@drawable/ic_trivia_black_24dp"
         android:title="@string/title_trivia" />
 </menu>
