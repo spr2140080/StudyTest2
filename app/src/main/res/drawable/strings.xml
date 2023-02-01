@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <resources>
+        <string android:name="app_name">TestDatePicker</string>
+        <string android:name="no_date">No Data</string>
+        <string android:name="pick_date">Pick Date</string>
+        <string android:name="stringformat">%d/%02d/%02d</string>
+    </resources>
+</selector>
