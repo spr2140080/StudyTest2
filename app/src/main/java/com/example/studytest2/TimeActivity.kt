@@ -147,7 +147,7 @@ class TimeActivity : AppCompatActivity() {
                 override fun onNothingSelected(parent: AdapterView<*>?) {}
             }
         binding.subjectButton.setOnClickListener {
-            val intent = Intent(applicationContext, SubjectActivity::class.java)
+            val intent = Intent(applicationContext, SubjectActivity2::class.java)
             startActivity(intent)
         }
         binding.backbutton.setOnClickListener {
