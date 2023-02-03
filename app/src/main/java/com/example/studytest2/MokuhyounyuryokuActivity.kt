@@ -1,31 +1,31 @@
 package com.example.studytest2
-
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import com.example.studytest2.databinding.ActivityMokuhyounyuryokuBinding
 
 class MokuhyounyuryokuActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMokuhyounyuryokuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mokuhyounyuryoku)
+        binding = ActivityMokuhyounyuryokuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+//        setContentView(R.layout.activity_mokuhyounyuryoku)
 
-        var editText = findViewById<EditText>(R.id.Edittext50)
-        var inputText = editText.editableText
 
-        var button50 = findViewById<Button>(R.id.button50)
+        var inputText = binding.Edittext50.editableText
 
-        button50.setOnClickListener {
-            if (editText.text.length >= 21) {
+
+        binding.button50.setOnClickListener {
+            if (binding.Edittext50.text.length >= 21) {
                 AlertDialog.Builder(this)
                     .setTitle("ERROR!")
                     .setMessage("20文字を超えています")
                     .setPositiveButton("OK") {dialog,which ->}
                     .show()
             }
-            else if(editText.length() <= 20){
+            else if(binding.Edittext50.text.length <= 20){
                 val  intent = Intent(this,MokuhyoukakuninActivity::class.java)
                 intent.putExtra("INPUT_TEXT",inputText.toString())
                 startActivity(intent)

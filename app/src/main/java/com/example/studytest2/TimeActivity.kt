@@ -27,9 +27,6 @@ class TimeActivity : AppCompatActivity() {
         millisInFuture: Long, countDownInterval: Long
     ) : CountDownTimer(millisInFuture, countDownInterval) {
         var isRunning = false
-
-
-
         private fun CountDownTimer(millisUntilFinished: Long):CountDownTimer{
             return object  :CountDownTimer(millisUntilFinished,100){
                 override fun onTick(p0: Long) {
@@ -106,13 +103,6 @@ class TimeActivity : AppCompatActivity() {
                     timer = MyCountDownTimer((min * 60 + sec) * 1000,100)
 
                 }
-//                binding.RestartButton.setOnClickListener {
-//                    val sharedPreferences = getSharedPreferences("timekei",Context.MODE_PRIVATE)
-//                    val min = getSharedPreferences("hidari", )
-//                    val sec = getSharedPreferences("migi", 0)
-//                    val times2  = binding.timerText.text.split(":")
-//                    timer = MyCountDownTimer((min * 60 + sec) * 1000,100)
-//                }
 
                 true
             }

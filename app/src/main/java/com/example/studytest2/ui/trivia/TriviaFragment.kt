@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.studytest2.R
-import com.example.teststudy1.ui.trivia.TriviaViewModel
+import com.example.teststudy2.ui.trivia.TriviaViewModel
 
 
 class TriviaFragment : Fragment() {

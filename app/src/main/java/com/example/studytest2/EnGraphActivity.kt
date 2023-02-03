@@ -44,7 +44,6 @@ class EnGraphActivity : AppCompatActivity() {
         pieChart.setDescription(description)
 
 
-
         val dataSet = PieDataSet(yValues, "教科名")
         dataSet.sliceSpace = 3f
         dataSet.selectionShift = 5f

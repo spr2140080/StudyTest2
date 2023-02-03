@@ -10,7 +10,7 @@
         android:id="@+id/target"
         android:layout_width="239dp"
         android:layout_height="105dp"
-        android:text="@string/con_text2"
+        android:text="@string/target"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

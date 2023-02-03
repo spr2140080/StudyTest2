@@ -1,17 +1,20 @@
 package com.example.studytest2
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.example.studytest2.ui.target.TargetFragment
+import androidx.appcompat.app.AppCompatActivity
+import com.example.studytest2.databinding.ActivityMokuhyoukakuninBinding
 
 class MokuhyoukakuninActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMokuhyoukakuninBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mokuhyoukakunin)
+        binding = ActivityMokuhyoukakuninBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val getText = findViewById<TextView>(R.id.textView71)
         val intentText = intent.getStringExtra("INPUT_TEXT")
         val modoru = findViewById<Button>(R.id.button70)

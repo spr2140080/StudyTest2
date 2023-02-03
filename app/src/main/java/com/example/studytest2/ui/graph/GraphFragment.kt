@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.studytest2.BouGraphActivity
 import com.example.studytest2.EnGraphActivity
-//import com.example.studytest2.BouGraphActivity
-//import com.example.studytest2.EnGraphActivity
+import com.example.studytest2.R
+
 
 import com.example.studytest2.databinding.FragmentGraphBinding
 
