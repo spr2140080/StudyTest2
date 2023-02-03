@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/rest1_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/rest_1"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="30dp" />
+            <TextView
+                android:id="@+id/rest2_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="@string/rest_2" />
+            <TextView
+                android:id="@+id/rest3_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:text="@string/rest_3" />
+            <TextView
+                android:id="@+id/rest4_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="@string/rest_4" />
+            <TextView
+                android:id="@+id/rest5_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:text="@string/rest_5" />
+            <TextView
+                android:id="@+id/rest6_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="@string/rest_6" />
+            <TextView
+                android:id="@+id/rest7_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:text="@string/rest_7" />
+            <TextView
+                android:id="@+id/rest8_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="@string/rest_8" />
+            <TextView
+                android:id="@+id/rest9_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:text="@string/rest_9" />
+            <TextView
+                android:id="@+id/rest10_text"
+                android:textSize="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/rest_10" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
