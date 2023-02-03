@@ -71,4 +71,16 @@
     <string name="eff_text8"></string>
     <string name="eff_text9">・まとめ</string>
     <string name="eff_text10"></string>
+
+    <string name="mokuhyou">今月の目標を設定する</string>
+    <string name="text50">今月の目標</string>
+    <string name="Edittext50" />
+    <string name="button50">決定</string>
+    <string name="target">今月の目標を入力する</string>
+    <string name="button70">書き直す</string>
+    <string name="button71">確定</string>
+    <string name="text70">今月の目標</string>
+    <string name="text71" />
+    <string name="text72">でよろしいですか？</string>
+    <string name="text73">※確定してしまうと期限が過ぎるまで目標を変更することができません。</string>
 </resources>
