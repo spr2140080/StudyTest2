@@ -35,15 +35,11 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_todo, R.id.navigation_dairy, R.id.navigation_graph,
-                R.id.navigation_target,R.id.navigation_trivia
+                R.id.navigation_target, R.id.navigation_trivia
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        binding.timebutton.setOnClickListener {
-            val intent = Intent(this, TimeActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
