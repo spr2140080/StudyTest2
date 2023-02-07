@@ -27,6 +27,8 @@ import android.view.animation.RotateAnimation
 class TimeActivity : AppCompatActivity() {
 
 
+    private lateinit var soundPool: SoundPool
+    private var soundOne = 0
     private lateinit var binding: ActivityTimeBinding
     private var remainingTime:Long = 0
     inner class MyCountDownTimer(
@@ -55,41 +57,39 @@ class TimeActivity : AppCompatActivity() {
         }
 
         override fun onFinish() {
+
             if (binding.timerText.text == "0:00"){
+                //　タイマー終了した後のメッセージ
                 AlertDialog.Builder(this@TimeActivity)
                     .setTitle("終了！！")
                     .setMessage("お疲れさまでした")
                     .setPositiveButton("OK") {dialog, which ->}
                     .show()
+                // タイマー終了した後の効果音
+                soundPool.play(soundOne,100f, 100f,0,0,1.0f)
             }else{
             }
         }
     }
-    private lateinit var soundPool: SoundPool
-    private var soundOne = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTimeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        //　効果音の設定・処理
         val audioAttributes = AudioAttributes.Builder()
             .setUsage(AudioAttributes.USAGE_GAME)
             .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
             .build()
-
         soundPool = SoundPool.Builder()
             .setAudioAttributes(audioAttributes)
             .setMaxStreams(1)
             .build()
-//        soundOne = soundPool.load(this, R.raw.bell,1)
+        soundOne = soundPool.load(this, R.raw.sound2,1)
+        soundPool.play(soundOne,100f, 100f,0,0,1.0f)
 
-
-
-        binding.soundbutton.setOnClickListener {
-            soundPool.play(soundOne,1.0f, 1.0f,0,0,1.0f)
-        }
 
         var timer = MyCountDownTimer(20 * 60 * 1000, 100)
         timer.isRunning = when (timer.isRunning) {
